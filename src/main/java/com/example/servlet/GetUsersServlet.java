@@ -14,7 +14,7 @@ public class GetUsersServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         if (Objects.nonNull(request)) {
-            RequestDispatcher dispatcher = request.getRequestDispatcher("jsp/users.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("users.jsp");
             if (Objects.nonNull(dispatcher)) {
                 dispatcher.forward(request, response);
             }
